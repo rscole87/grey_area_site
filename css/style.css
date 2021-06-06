@@ -1,0 +1,9 @@
+nav {
+  background: linear-gradient(0.45turn, #464646, #312b2b); }
+
+#header-section {
+  height: 120vh;
+  background: radial-gradient(#464646, #312b2b); }
+
+#services-section {
+  height: 80vh; }

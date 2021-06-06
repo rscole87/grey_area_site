@@ -29,6 +29,7 @@
     "usemin-cli": "^0.6.0"
   },
   "dependencies": {
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.0.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
