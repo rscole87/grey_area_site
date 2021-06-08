@@ -1,3 +1,9 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-color: #d4d4d4; }
+
 nav {
   background: linear-gradient(0.45turn, #464646, #312b2b); }
 
