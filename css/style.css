@@ -46,3 +46,7 @@ nav {
   100% {
     opacity: 0;
     transform: translateY(40px); } }
+
+footer {
+  min-height: 10vh;
+  max-height: 25vh; }
