@@ -1,0 +1,47 @@
+#header-section {
+  min-height: 75vh;
+  background-image: url(../images/BG-header.jpg);
+  background-size: cover;
+
+  #header {
+    height: 75vh;
+
+    #header-content-container {
+      background-color: #f0f0f254;
+      padding: 5%;
+      max-width: 900px;
+      min-height: 50%;
+      max-height: 700px;
+      border-radius: 5px;
+      backdrop-filter: blur(12px);
+    }
+  }
+}
+
+#services-section {
+  min-height: 50vh;
+  background-color: #070d19;
+  h3,
+  h4,
+  p {
+    color: #f0f0f2;
+  }
+}
+
+#about-section {
+  min-height: 50vh;
+  background-color: #f0f0f2;
+}
+
+#call-to-action-section {
+  min-height: 50vh;
+}
+
+footer {
+  min-height: 20vh;
+  background-color: #070d19;
+
+  li, address, p {
+      color: #f0f0f2;
+  }
+}
