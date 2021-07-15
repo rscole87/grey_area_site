@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Container, Row, Col } from "reactstrap";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -19,28 +20,24 @@ export default function Header() {
           <NavbarToggler onClick={toggleNav} />
           <Collapse isOpen={isNavOpen} navbar>
             <Nav navbar>
-              <NavItem>
-                <NavLink className="nav-link" to="/about">
-                  About
-                </NavLink>
-              </NavItem>
+              <Link to="about-section" spy={true} smooth={true} className="some-class" activeClass="some-active-class">
+                <NavItem>About</NavItem>
+              </Link>
 
               <NavItem>
-                <NavLink className="nav-link" to="/services">
+                <Link to="services-section" spy={true} smooth={true} className="some-class" activeClass="some-active-class">
                   Services
-                </NavLink>
+                </Link>
               </NavItem>
-
               <NavItem>
-                <NavLink className="nav-link" to="/pricing">
+                <Link to="pricing" spy={true} smooth={true} className="some-class" activeClass="some-active-class">
                   Pricing
-                </NavLink>
+                </Link>
               </NavItem>
-
               <NavItem>
-                <NavLink className="nav-link" to="/contact">
+                <Link to="call-to-action-section" spy={true} smooth={true} className="some-class" activeClass="some-active-class">
                   Contact
-                </NavLink>
+                </Link>
               </NavItem>
             </Nav>
           </Collapse>
