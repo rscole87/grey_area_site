@@ -58,6 +58,11 @@ h4 {
   background-size: cover;
 }
 
+#header-section #client-branding {
+  width: auto;
+  height: 50px;
+}
+
 #header-section #header {
   height: 75vh;
 }
@@ -142,7 +147,7 @@ h4 {
 
 #call-to-action-section {
   min-height: 50vh;
-  padding-top: 10vh;
+  padding: 10vh 0vh;
 }
 
 footer {

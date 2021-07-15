@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Container, Row, Col } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
+import ClientFullBrand from "../images/grey-area-full-branding-02.png"
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Header() {
         <Navbar dark sticky="top" expand="md" style={{ backgroundColor: "#128df1d2" }}>
           <div className="container">
             <NavbarBrand className="mr-auto" href="/">
-              <img src="" height="30" width="30" alt="Grey Area Services" />
+              <img id="client-branding" src={ClientFullBrand} height="30" width="30" alt="Grey Area Services" />
             </NavbarBrand>
             <NavbarToggler onClick={toggleNav} />
             <Collapse isOpen={isNavOpen} navbar>
