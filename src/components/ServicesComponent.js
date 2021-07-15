@@ -9,9 +9,9 @@ export default function Services() {
       <section id="services-section">
         <Element id="services" name="services">
           <Container>
-            <h3>How We Can Help</h3>
+            <h3 className="text-center">How We Can Help</h3>
             <Fade top duration={2000}>
-              <Row id="service-options-div">
+              <Row id="service-options-div" className="pt-3">
                 <Col className="service text-center" sm="4">
                   <img src="" alt="" />
                   <h4>Service</h4>

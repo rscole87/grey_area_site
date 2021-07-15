@@ -1,3 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+h1,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+.input-bttn {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 12px 40px;
+  border-radius: 4px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  position: relative;
+  z-index: 1;
+}
+
+.input-bttn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #128BF1;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+.input-bttn:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.input-bttn:hover {
+  color: white;
+  border: 2px solid #128BF1;
+}
+
 #header-section {
   min-height: 75vh;
   background-image: url(../images/BG-header.jpg);
@@ -21,6 +75,7 @@
 
 #services-section {
   min-height: 50vh;
+  padding-top: 10vh;
   background-color: #070d19;
 }
 
@@ -30,21 +85,75 @@
   color: #f0f0f2;
 }
 
+#services-section .service-description {
+  font-size: 1rem;
+}
+
 #about-section {
   min-height: 50vh;
+  padding-top: 10vh;
   background-color: #f0f0f2;
+}
+
+#about-section #about-form-div {
+  border-left: 3px solid white;
+}
+
+#about-section #about-form-div form input,
+#about-section #about-form-div form textarea {
+  width: 100%;
+  border: 1px solid #128BF1;
+  border-left: 8px solid #128BF1;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 15px;
+  resize: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+#about-section #about-form-div form input:focus,
+#about-section #about-form-div form textarea:focus {
+  padding: 10px 5px 10px 15px;
+}
+
+#about-section #about-form-div form ::-webkit-input-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+  color: #128BF1;
+}
+
+#about-section #about-form-div form :-ms-input-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+  color: #128BF1;
+}
+
+#about-section #about-form-div form ::-ms-input-placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+  color: #128BF1;
+}
+
+#about-section #about-form-div form ::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.8rem;
+  color: #128BF1;
 }
 
 #call-to-action-section {
   min-height: 50vh;
+  padding-top: 10vh;
 }
 
 footer {
   min-height: 20vh;
+  padding-top: 5vh;
   background-color: #070d19;
 }
 
-footer li, footer address, footer p {
+footer li,
+footer address,
+footer p {
   color: #f0f0f2;
 }
 /*# sourceMappingURL=App.css.map */

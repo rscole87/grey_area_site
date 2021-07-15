@@ -10,7 +10,7 @@ export default function About() {
         <Element id="about" name="about">
           <Container>
             <Row>
-              <Col id="about-text-div" sm="8">
+              <Col id="about-text-div" className="pe-5" sm="8">
                 <Fade top duration={2000}>
                   <h3>Revealing the Truth</h3>
                   <p className="body-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -21,13 +21,14 @@ export default function About() {
                 </Fade>
               </Col>
 
-              <Col id="about-form-div" sm="4">
-                <p className="body-copy">Please fill in the fomr below and we will contact you for a free estimate based on your needs.</p>
-
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <textarea name="" id="" cols="30" rows="5" placeholder="Your questions:"></textarea>
-                <button className="input-bttn">Free Consult</button>
+              <Col id="about-form-div" className="px-5" sm="4">
+                <p className="body-copy">Please fill in the form below and we will contact you for a free estimate based on your needs.</p>
+                <form action="submit">
+                  <input type="text" placeholder="Name" />
+                  <input type="email" placeholder="Email" />
+                  <textarea name="" id="" cols="30" rows="3" placeholder="Your questions:"></textarea>
+                  <button type="submit" className="input-bttn mx-auto">Free Consult</button>
+                </form>
               </Col>
             </Row>
           </Container>
