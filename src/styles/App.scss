@@ -76,6 +76,10 @@ h4 {
 #main-nav {
   backdrop-filter: blur(5px);
   background-color: #128df1d2;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 
   #client-branding {
     width: auto;
@@ -86,7 +90,20 @@ h4 {
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 0.2rem;
+    margin: 0px 5px;
   }
+
+  #contact-link {
+    color: $customBlue;
+    background-color: white;
+    border-radius: 3px;
+    transition: 300ms;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.623);
+    }
+  }
+
 }
 
 #header-section {

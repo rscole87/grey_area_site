@@ -13,16 +13,16 @@ export default function Header() {
   const links = navLinks.map((link) => {
     return (
       <NavItem key={link.id}>
-        <a className="nav-link" href={link.url} onClick={toggleNav}>
+        <a className="nav-link" href={link.url} onClick={() => toggleNav()}>
           {link.text}
         </a>
       </NavItem>
     );
-  }); 
+  });
 
   return (
     <>
-      <Navbar id="main-nav" dark sticky="top" expand="md">
+      <Navbar id="main-nav" dark expand="md">
         <div className="container">
           <NavbarBrand className="mr-auto" href="/">
             <img id="client-branding" src={ClientFullBrand} height="30" width="30" alt="Grey Area Services" />
@@ -31,6 +31,9 @@ export default function Header() {
           <Collapse isOpen={isNavOpen} className="justify-content-end" navbar>
             <Nav className="text-center" navbar>
               {links}
+              <NavItem>
+                <a id="contact-link" className="nav-link" href="" onClick={() => toggleNav()}>Contact</a>
+              </NavItem>
             </Nav>
           </Collapse>
         </div>
