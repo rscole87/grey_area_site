@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Noto Sans", sans-serif;
+  overflow-x: hidden;
+  position: relative;
 }
 
 h1,
 h3,
 h4 {
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -81,7 +85,7 @@ h4 {
 }
 
 #header-section {
-  min-height: 75vh;
+  min-height: 80vh;
   background-image: url(../images/BG-header.jpg);
   background-size: cover;
 }

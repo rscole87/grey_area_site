@@ -1,4 +1,3 @@
-import { link } from "fs";
 import React, { useState } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Container, Row, Col } from "reactstrap";
 import ClientFullBrand from "../images/grey-area-full-branding-02.png";
@@ -13,13 +12,13 @@ export default function Header() {
 
   const links = navLinks.map((link) => {
     return (
-      <NavItem>
-        <a className="nav-link" href={link.url}>
+      <NavItem key={link.id}>
+        <a className="nav-link" href={link.url} onClick={toggleNav}>
           {link.text}
         </a>
       </NavItem>
     );
-  });
+  }); 
 
   return (
     <>

@@ -13,7 +13,9 @@ export default function CallToAction() {
             </Col>
 
             <Col id="call-to-action-text-div" className="ps-5 pt-5" sm="8">
-              <h4>Always Discreet. Always Confidential.</h4>
+              <h4 data-aos="fade-left" data-aos-duration="1500">
+                Always Discreet. Always Confidential.
+              </h4>
               <p className="body-copy">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
               <button className="input-bttn">View More</button>
               <button className="input-bttn">Get Started</button>
