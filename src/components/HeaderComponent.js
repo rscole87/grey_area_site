@@ -42,8 +42,8 @@ export default function Header() {
       <section id="header-section">
         <Container>
           <Row id="header">
-            <Col id="header-content-container" className="mx-auto my-auto">
-              <div id="header-content" className="text-center">
+            <Col id="header-content-container" className="mx-auto my-auto d-flex">
+              <div id="header-content" className="text-center align-self-center">
                 <div className="row">
                   <h1>It's all about the Grey.</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
