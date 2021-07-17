@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
 }
@@ -16,6 +20,7 @@ h4 {
   background-color: transparent;
   border: 2px solid black;
   padding: 12px 40px;
+  margin: 0px 12px;
   border-radius: 4px;
   -webkit-transition: 500ms;
   transition: 500ms;
@@ -52,15 +57,33 @@ h4 {
   border: 2px solid #128BF1;
 }
 
+@media only screen and (max-width: 575px) {
+  .input-bttn {
+    padding: 5px 20px;
+  }
+}
+
+#main-nav {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: #128df1d2;
+}
+
+#main-nav #client-branding {
+  width: auto;
+  height: 50px;
+}
+
+#main-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+}
+
 #header-section {
   min-height: 75vh;
   background-image: url(../images/BG-header.jpg);
   background-size: cover;
-}
-
-#header-section #client-branding {
-  width: auto;
-  height: 50px;
 }
 
 #header-section #header {
@@ -78,9 +101,15 @@ h4 {
           backdrop-filter: blur(12px);
 }
 
+@media only screen and (max-width: 575px) {
+  #header-section #header #header-content-container {
+    max-width: 90%;
+  }
+}
+
 #services-section {
   min-height: 50vh;
-  padding-top: 10vh;
+  padding: 10vh 0;
   background-color: #070d19;
 }
 
@@ -96,7 +125,7 @@ h4 {
 
 #about-section {
   min-height: 50vh;
-  padding-top: 10vh;
+  padding: 10vh 0;
   background-color: #f0f0f2;
 }
 
@@ -104,11 +133,27 @@ h4 {
   border-left: 3px solid white;
 }
 
+@media only screen and (max-width: 575px) {
+  #about-section #about-form-div {
+    border-left: none;
+  }
+}
+
+#about-section #about-form-div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 #about-section #about-form-div form input,
 #about-section #about-form-div form textarea {
   width: 100%;
   border: 1px solid #128BF1;
-  border-left: 8px solid #128BF1;
+  border-left: 10px solid #128BF1;
   margin-bottom: 10px;
   padding: 5px 5px 5px 15px;
   resize: none;
@@ -147,7 +192,7 @@ h4 {
 
 #call-to-action-section {
   min-height: 50vh;
-  padding: 10vh 0vh;
+  padding: 10vh 0;
 }
 
 footer {

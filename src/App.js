@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "font-awesome/css/font-awesome.css";
 import "./styles/App.css";
 import Header from "./components/HeaderComponent";
@@ -6,8 +7,14 @@ import About from "./components/AboutComponent";
 import CallToAction from "./components/CallToActionComponent";
 import Footer from "./components/FooterComponent";
 import { BrowserRouter } from "react-router-dom";
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <BrowserRouter>

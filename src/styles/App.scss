@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
 @import "./variables";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
 }
@@ -18,6 +22,7 @@ h4 {
   background-color: transparent;
   border: 2px solid black;
   padding: 12px 40px;
+  margin: 0px 12px;
   border-radius: 4px;
   transition: 500ms;
   position: relative;
@@ -36,27 +41,43 @@ h4 {
     transform-origin: left;
     transition: transform 300ms ease-in-out;
   }
-  
+
   &:hover::before {
     transform: scaleX(1);
   }
 
-  &:hover{
+  &:hover {
     color: white;
     border: 2px solid $customBlue;
   }
+}
 
+@media only screen and (max-width: 575px) {
+  .input-bttn{
+    padding: 5px 20px;
+  }
+}
+
+#main-nav {
+  backdrop-filter: blur(5px);
+  background-color: #128df1d2;
+
+  #client-branding {
+    width: auto;
+    height: 50px;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+  }
 }
 
 #header-section {
   min-height: 75vh;
   background-image: url(../images/BG-header.jpg);
   background-size: cover;
-
-  #client-branding{
-    width: auto;
-    height: 50px;
-  }
 
   #header {
     height: 75vh;
@@ -69,13 +90,17 @@ h4 {
       max-height: 700px;
       border-radius: 5px;
       backdrop-filter: blur(12px);
+
+      @media only screen and (max-width: 575px){
+        max-width: 90%;
+      }
     }
   }
 }
 
 #services-section {
   min-height: 50vh;
-  padding-top: 10vh;
+  padding: 10vh 0;
   background-color: #070d19;
   h3,
   h4,
@@ -90,18 +115,25 @@ h4 {
 
 #about-section {
   min-height: 50vh;
-  padding-top: 10vh;
+  padding: 10vh 0;
   background-color: #f0f0f2;
 
   #about-form-div {
     border-left: 3px solid white;
+    
+    @media only screen and (max-width: 575px) {
+      border-left: none;
+    }
+
 
     form {
+      display: flex;
+      flex-direction: column;
       input,
       textarea {
         width: 100%;
         border: 1px solid $customBlue;
-        border-left: 8px solid $customBlue;
+        border-left: 10px solid $customBlue;
         margin-bottom: 10px;
         padding: 5px 5px 5px 15px;
         resize: none;
@@ -123,9 +155,7 @@ h4 {
 
 #call-to-action-section {
   min-height: 50vh;
-  padding: 10vh 0vh;
-
-
+  padding: 10vh 0;
 }
 
 footer {

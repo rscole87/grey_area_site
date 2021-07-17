@@ -1,8 +1,8 @@
+import { link } from "fs";
 import React, { useState } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Container, Row, Col } from "reactstrap";
-import { NavLink } from "react-router-dom";
-import { Link } from "react-scroll";
-import ClientFullBrand from "../images/grey-area-full-branding-02.png"
+import ClientFullBrand from "../images/grey-area-full-branding-02.png";
+import navLinks from "./shared/navLinks";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -11,55 +11,46 @@ export default function Header() {
     setIsNavOpen(!isNavOpen);
   };
 
+  const links = navLinks.map((link) => {
+    return (
+      <NavItem>
+        <a className="nav-link" href={link.url}>
+          {link.text}
+        </a>
+      </NavItem>
+    );
+  });
+
   return (
     <>
-      <section id="header-section">
-        <Navbar dark sticky="top" expand="md" style={{ backgroundColor: "#128df1d2" }}>
-          <div className="container">
-            <NavbarBrand className="mr-auto" href="/">
-              <img id="client-branding" src={ClientFullBrand} height="30" width="30" alt="Grey Area Services" />
-            </NavbarBrand>
-            <NavbarToggler onClick={toggleNav} />
-            <Collapse isOpen={isNavOpen} navbar>
-              <Nav navbar>
-                <Link to="about-section" spy={true} smooth={true} className="some-class" activeClass="some-active-class">
-                  <NavItem>About</NavItem>
-                </Link>
+      <Navbar id="main-nav" dark sticky="top" expand="md">
+        <div className="container">
+          <NavbarBrand className="mr-auto" href="/">
+            <img id="client-branding" src={ClientFullBrand} height="30" width="30" alt="Grey Area Services" />
+          </NavbarBrand>
+          <NavbarToggler onClick={toggleNav} />
+          <Collapse isOpen={isNavOpen} className="justify-content-end" navbar>
+            <Nav className="text-center" navbar>
+              {links}
+            </Nav>
+          </Collapse>
+        </div>
+      </Navbar>
 
-                <NavItem>
-                  <Link to="services-section" spy={true} smooth={true} className="some-class" activeClass="some-active-class">
-                    Services
-                  </Link>
-                </NavItem>
-                <NavItem>
-                  <Link to="pricing" spy={true} smooth={true} className="some-class" activeClass="some-active-class">
-                    Pricing
-                  </Link>
-                </NavItem>
-                <NavItem>
-                  <Link to="call-to-action-section" spy={true} smooth={true} className="some-class" activeClass="some-active-class">
-                    Contact
-                  </Link>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </div>
-        </Navbar>
+      <section id="header-section">
         <Container>
           <Row id="header">
             <Col id="header-content-container" className="mx-auto my-auto">
               <div id="header-content" className="text-center">
-                <h1>It's all about the Grey.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 <div className="row">
-                  <div className="col-3"></div>
-                  <div className="col-3">
+                  <h1>It's all about the Grey.</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <div className="row">
+                  <div>
                     <button className="input-bttn ">View More</button>
-                  </div>
-                  <div className="col-3">
                     <button className="input-bttn mx-auto">Get Started</button>
                   </div>
-                  <div className="col-3"></div>
                 </div>
               </div>
             </Col>

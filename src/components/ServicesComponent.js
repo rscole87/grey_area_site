@@ -1,38 +1,33 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { Element } from "react-scroll";
-import Fade from 'react-reveal/Fade';
 
 export default function Services() {
   return (
     <>
       <section id="services-section">
-        <Element id="services" name="services">
-          <Container>
-            <h3 className="text-center">How We Can Help</h3>
-            <Fade top duration={2000}>
-              <Row id="service-options-div" className="pt-3">
-                <Col className="service text-center" sm="4">
-                  <img src="" alt="" />
-                  <h4>Service</h4>
-                  <p className="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </Col>
+        <Container>
+          <h3 className="text-center">How We Can Help</h3>
 
-                <Col className="service text-center" sm="4">
-                  <img src="" alt="" />
-                  <h4>Service</h4>
-                  <p className="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </Col>
+          <Row id="service-options-div" className="pt-3 " >
+            <Col className="service text-center" sm="4" data-aos="fade-down" data-aos-duration="1000">
+              <img src="" alt="" />
+              <h4>Service</h4>
+              <p className="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </Col>
 
-                <Col className="service text-center" sm="4">
-                  <img src="" alt="" />
-                  <h4>Service</h4>
-                  <p className="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </Col>
-              </Row>
-            </Fade>
-          </Container>
-        </Element>
+            <Col className="service text-center" sm="4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+              <img src="" alt="" />
+              <h4>Service</h4>
+              <p className="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </Col>
+
+            <Col className="service text-center" sm="4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
+              <img src="" alt="" />
+              <h4>Service</h4>
+              <p className="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </>
   );
