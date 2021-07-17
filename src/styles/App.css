@@ -109,13 +109,13 @@ h4 {
 }
 
 #header-section {
-  min-height: 80vh;
+  min-height: 85vh;
   background-image: url(../images/BG-header.jpg);
   background-size: cover;
 }
 
 #header-section #header {
-  height: 75vh;
+  height: 85vh;
 }
 
 #header-section #header #header-content-container {
@@ -141,6 +141,13 @@ h4 {
   background-color: #070d19;
 }
 
+@media only screen and (max-width: 575px) {
+  #services-section {
+    padding: 15vh 0 10vh 0;
+    margin-top: -5vh;
+  }
+}
+
 #services-section h3,
 #services-section h4,
 #services-section p {
@@ -155,6 +162,13 @@ h4 {
   min-height: 50vh;
   padding: 10vh 0;
   background-color: #f0f0f2;
+}
+
+@media only screen and (max-width: 575px) {
+  #about-section {
+    padding: 15vh 0 10vh 0;
+    margin-top: -5vh;
+  }
 }
 
 #about-section #about-form-div {
@@ -224,6 +238,10 @@ h4 {
 }
 
 @media only screen and (max-width: 575px) {
+  #call-to-action-section {
+    padding: 15vh 0 10vh 0;
+    margin-top: -5vh;
+  }
   #call-to-action-section img {
     max-width: 150px;
   }

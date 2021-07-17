@@ -59,16 +59,16 @@ h4 {
     border: 2px solid $customBlue;
   }
 }
-.no-left-margin{
+.no-left-margin {
   margin-left: 0;
 }
 
 @media only screen and (max-width: 575px) {
-  .input-bttn{
+  .input-bttn {
     padding: 5px 20px;
   }
 
-  .no-left-margin{
+  .no-left-margin {
     margin-left: 12px;
   }
 }
@@ -103,16 +103,15 @@ h4 {
       background-color: rgba(255, 255, 255, 0.623);
     }
   }
-
 }
 
 #header-section {
-  min-height: 80vh;
+  min-height: 85vh;
   background-image: url(../images/BG-header.jpg);
   background-size: cover;
 
   #header {
-    height: 75vh;
+    height: 85vh;
 
     #header-content-container {
       background-color: #f0f0f254;
@@ -123,7 +122,7 @@ h4 {
       border-radius: 5px;
       backdrop-filter: blur(12px);
 
-      @media only screen and (max-width: 575px){
+      @media only screen and (max-width: 575px) {
         max-width: 90%;
       }
     }
@@ -133,6 +132,12 @@ h4 {
 #services-section {
   min-height: 50vh;
   padding: 10vh 0;
+
+  @media only screen and (max-width: 575px) {
+    padding: 15vh 0 10vh 0;
+    margin-top: -5vh;
+  }
+
   background-color: #070d19;
   h3,
   h4,
@@ -148,15 +153,20 @@ h4 {
 #about-section {
   min-height: 50vh;
   padding: 10vh 0;
+
+  @media only screen and (max-width: 575px) {
+    padding: 15vh 0 10vh 0;
+    margin-top: -5vh;
+  }
+
   background-color: #f0f0f2;
 
   #about-form-div {
     border-left: 3px solid white;
-    
+
     @media only screen and (max-width: 575px) {
       border-left: none;
     }
-
 
     form {
       display: flex;
@@ -188,13 +198,15 @@ h4 {
 #call-to-action-section {
   min-height: 50vh;
   padding: 10vh 0;
-  
+
   @media only screen and (max-width: 575px) {
-    img{
+    padding: 15vh 0 10vh 0;
+    margin-top: -5vh;
+
+    img {
       max-width: 150px;
     }
   }
-  
 }
 
 footer {
