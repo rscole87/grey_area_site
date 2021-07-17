@@ -48,7 +48,7 @@ export default function Header() {
                 <div className="row">
                   <div>
                     <button className="input-bttn ">View More</button>
-                    <button className="input-bttn mx-auto">Get Started</button>
+                    <button className="input-bttn ">Get Started</button>
                   </div>
                 </div>
               </div>

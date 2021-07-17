@@ -61,9 +61,16 @@ h4 {
   border: 2px solid #128BF1;
 }
 
+.no-left-margin {
+  margin-left: 0;
+}
+
 @media only screen and (max-width: 575px) {
   .input-bttn {
     padding: 5px 20px;
+  }
+  .no-left-margin {
+    margin-left: 12px;
   }
 }
 
@@ -197,6 +204,12 @@ h4 {
 #call-to-action-section {
   min-height: 50vh;
   padding: 10vh 0;
+}
+
+@media only screen and (max-width: 575px) {
+  #call-to-action-section img {
+    max-width: 150px;
+  }
 }
 
 footer {

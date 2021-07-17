@@ -7,7 +7,7 @@ export default function About() {
       <section id="about-section">
         <Container>
           <Row>
-            <Col id="about-text-div" className="pe-5" sm="8">
+            <Col id="about-text-div" className="pe-sm-5" sm="8">
               <h3 data-aos="fade-right" data-aos-duration="1500">Revealing the Truth</h3>
               <p className="body-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
