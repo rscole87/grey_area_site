@@ -45,7 +45,7 @@ export default function Header() {
             <Col id="header-content-container" className="mx-auto my-auto d-flex">
               <div id="header-content" className="text-center align-self-center">
                 <div className="row">
-                  <h1>It's all about the Grey.</h1>
+                  <h1 id="main-heading">It's all about the Grey.</h1>
                   <p>We operate in the Grey Area to help you find the infomation you need. <br /> Efficient. Discreet. Confidential.</p>
                 </div>
                 <div className="row">
