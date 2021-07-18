@@ -165,13 +165,20 @@ h4 {
 #about-section {
   min-height: 50vh;
   padding: 10vh 0;
+  background-color: #f0f0f2;
+
+  .pull-quote{
+    font-size: 3rem;
+    color: $customBlue;
+    font-weight: lighter;
+    line-height: 3rem;
+  }
 
   @media only screen and (max-width: 575px) {
     padding: 15vh 0 10vh 0;
     margin-top: -5vh;
   }
 
-  background-color: #f0f0f2;
 
   #about-form-div {
     border-left: 3px solid white;
