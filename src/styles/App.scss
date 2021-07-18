@@ -145,6 +145,18 @@ h4 {
     color: #f0f0f2;
   }
 
+  .service-icon {
+    max-width: 70px;
+
+    @media only screen and (max-width: 575px) {
+      max-width: 60px;
+    }
+  }
+
+  .service-heading {
+    margin-top: 20px;
+  }
+
   .service-description {
     font-size: 1rem;
   }
