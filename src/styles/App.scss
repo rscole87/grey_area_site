@@ -121,19 +121,18 @@ h4 {
       max-height: 700px;
       border-radius: 5px;
       backdrop-filter: blur(12px);
-      
+
       #main-heading {
         font-size: 3.5rem;
       }
-      
+
       @media only screen and (max-width: 575px) {
         max-width: 90%;
-        
+
         #main-heading {
           font-size: 2.5rem;
         }
       }
-
     }
   }
 }
@@ -157,7 +156,7 @@ h4 {
   .service-icon {
     max-width: 70px;
 
-    @media only screen and (max-width: 575px) {
+    @media only screen and (max-width: 992px) {
       max-width: 60px;
     }
   }
@@ -176,10 +175,10 @@ h4 {
   padding: 10vh 0;
   background-color: #f0f0f2;
 
-  .pull-quote{
+  .pull-quote {
     font-size: 3rem;
     color: $customBlue;
-    font-weight: lighter;
+    font-weight: 100;
     line-height: 3rem;
   }
 
@@ -187,7 +186,6 @@ h4 {
     padding: 15vh 0 10vh 0;
     margin-top: -5vh;
   }
-
 
   #about-form-div {
     border-left: 3px solid white;
@@ -227,12 +225,20 @@ h4 {
   min-height: 50vh;
   padding: 10vh 0;
 
+  #logo-bg-div {
+    img {
+      max-width: 100%;
+    }
+  }
+
   @media only screen and (max-width: 575px) {
     padding: 15vh 0 10vh 0;
     margin-top: -5vh;
 
-    img {
-      max-width: 150px;
+    #logo-bg-div {
+      img {
+        max-width: 150px;
+      }
     }
   }
 }
@@ -268,7 +274,7 @@ footer {
     }
   }
 
-  #mt-logo{
+  #mt-logo {
     width: auto;
     height: 75px;
   }

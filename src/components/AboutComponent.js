@@ -16,7 +16,7 @@ export default function About() {
               <p className="body-copy pull-quote">The truth is what you're seeking, and it's our mission to get you there.</p>
             </Col>
 
-            <Col id="about-form-div" className="px-5" sm="4">
+            <Col id="about-form-div" className="ps-sm-5" sm="4">
               <p className="body-copy">Please fill in the form below and we will contact you for a free estimate based on your needs.</p>
               <form action="submit">
                 <input type="text" placeholder="Name" />

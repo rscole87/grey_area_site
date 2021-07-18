@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import ClientFullBrand from "../images/grey-area-full-branding-02.png";
-import MtLogo from "../images/MT-logo-WHITE.png"
+import MtLogo from "../images/MT-logo-WHITE.png";
 import navLinks from "../shared/navLinks";
 
 export default function Footer() {
@@ -20,15 +20,18 @@ export default function Footer() {
       <footer>
         <Container>
           <Row>
-            <Col sm="2" className="d-flex justify-content-center justify-content-sm-start">
+            <Col sm="4" className="d-flex flex-column flex-lg-row justify-content-center justify-content-sm-start">
               <div className="align-self-center ">
                 <img src={ClientFullBrand} className="client-branding" alt="Grey Area Services" />
               </div>
+              <div>
+                <ul id="footer-nav" className="p-0 ps-lg-5 mt-3 mt-lg-0 d-flex flex-row flex-lg-column justify-content-around">
+                  {links}
+                </ul>
+              </div>
             </Col>
-            <Col sm="2">
-              <ul id="footer-nav" className="p-0 ps-sm-5 mt-3 mt-sm-0 d-flex flex-row flex-sm-column justify-content-around">{links}</ul>
-            </Col>
-            <Col sm="4" className="text-center text-sm-start">
+
+            <Col sm="4" className="text-center text-sm-start ps-sm-5">
               <address>
                 12345 Main Street St. Petersburg, FL 33700 <br />
                 (727) 555-1234 <br />

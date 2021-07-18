@@ -165,7 +165,7 @@ h4 {
   max-width: 70px;
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 992px) {
   #services-section .service-icon {
     max-width: 60px;
   }
@@ -188,7 +188,7 @@ h4 {
 #about-section .pull-quote {
   font-size: 3rem;
   color: #128BF1;
-  font-weight: lighter;
+  font-weight: 100;
   line-height: 3rem;
 }
 
@@ -265,12 +265,16 @@ h4 {
   padding: 10vh 0;
 }
 
+#call-to-action-section #logo-bg-div img {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 575px) {
   #call-to-action-section {
     padding: 15vh 0 10vh 0;
     margin-top: -5vh;
   }
-  #call-to-action-section img {
+  #call-to-action-section #logo-bg-div img {
     max-width: 150px;
   }
 }
