@@ -9,11 +9,11 @@ export default function About() {
           <Row>
             <Col id="about-text-div" className="pe-sm-5" sm="8">
               <h3 data-aos="fade-right" data-aos-duration="1500">Revealing the Truth</h3>
-              <p className="body-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <p className="body-copy">Grey Area Services is a veteran-owned and operated full service private investigative firm serving the Tampa Bay Area and surrounding communities. Our team is comprised of diverse, talented individuals who leverage years of military experience and training to provide a wide variety of services for our clients. </p>
 
-              <p className="body-copy">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className="body-copy">We believe our investigative services provide a level of transparency everyone deserves, which is why we serve both commercial entities and private citizens. Uncovering the truth for you is our ultimate goal.</p>
 
-              <p className="body-copy">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+              <p className="body-copy">The truth is what you're seeking, and it's our mission to get you there.</p>
             </Col>
 
             <Col id="about-form-div" className="px-5" sm="4">
