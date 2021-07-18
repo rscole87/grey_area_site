@@ -20,15 +20,15 @@ export default function Footer() {
       <footer>
         <Container>
           <Row>
-            <Col sm="2" className="d-flex ">
-              <div className="align-self-center">
+            <Col sm="2" className="d-flex justify-content-center justify-content-sm-start">
+              <div className="align-self-center ">
                 <img src={ClientFullBrand} className="client-branding" alt="Grey Area Services" />
               </div>
             </Col>
             <Col sm="2">
-              <ul id="footer-nav">{links}</ul>
+              <ul id="footer-nav" className="p-0 ps-sm-5 mt-3 mt-sm-0 d-flex flex-row flex-sm-column justify-content-around">{links}</ul>
             </Col>
-            <Col sm="4">
+            <Col sm="4" className="text-center text-sm-start">
               <address>
                 12345 Main Street St. Petersburg, FL 33700 <br />
                 (727) 555-1234 <br />

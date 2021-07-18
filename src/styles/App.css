@@ -129,14 +129,17 @@ h4 {
           backdrop-filter: blur(12px);
 }
 
+#header-section #header #header-content-container #main-heading {
+  font-size: 3.5rem;
+}
+
 @media only screen and (max-width: 575px) {
   #header-section #header #header-content-container {
     max-width: 90%;
   }
-}
-
-#header-section #header #header-content-container #main-heading {
-  font-size: 3.5rem;
+  #header-section #header #header-content-container #main-heading {
+    font-size: 2.5rem;
+  }
 }
 
 #services-section {
@@ -274,7 +277,7 @@ h4 {
 
 footer {
   min-height: 20vh;
-  padding-top: 5vh;
+  padding: 5vh 0;
   background-color: #070d19;
 }
 
@@ -297,6 +300,12 @@ footer #footer-nav {
 footer #footer-nav a {
   text-transform: capitalize;
   text-decoration: none;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+footer #footer-nav a:hover {
+  color: #128BF1;
 }
 
 footer #mt-logo {
