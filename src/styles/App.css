@@ -84,7 +84,7 @@ h4 {
   z-index: 100;
 }
 
-#main-nav #client-branding {
+#main-nav .client-branding {
   width: auto;
   height: 50px;
 }
@@ -92,7 +92,7 @@ h4 {
 #main-nav .nav-link {
   text-transform: uppercase;
   font-size: 0.8rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.15rem;
   margin: 0px 5px;
 }
 
@@ -274,9 +274,29 @@ footer {
   background-color: #070d19;
 }
 
-footer li,
+footer .client-branding {
+  width: auto;
+  height: 45px;
+}
+
+footer a,
 footer address,
 footer p {
   color: #f0f0f2;
+  font-size: 0.9rem;
+}
+
+footer #footer-nav {
+  list-style: none;
+}
+
+footer #footer-nav a {
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+footer #mt-logo {
+  width: auto;
+  height: 75px;
 }
 /*# sourceMappingURL=App.css.map */

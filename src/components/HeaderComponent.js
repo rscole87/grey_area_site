@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Container, Row, Col } from "reactstrap";
 import ClientFullBrand from "../images/grey-area-full-branding-02.png";
-import navLinks from "./shared/navLinks";
+import navLinks from "../shared/navLinks";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -25,7 +25,7 @@ export default function Header() {
       <Navbar id="main-nav" dark expand="md">
         <div className="container">
           <NavbarBrand className="mr-auto" href="/">
-            <img id="client-branding" src={ClientFullBrand} height="30" width="30" alt="Grey Area Services" />
+            <img className="client-branding" src={ClientFullBrand} height="30" width="30" alt="Grey Area Services" />
           </NavbarBrand>
           <NavbarToggler onClick={toggleNav} />
           <Collapse isOpen={isNavOpen} className="justify-content-end" navbar>

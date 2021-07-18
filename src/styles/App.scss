@@ -81,7 +81,7 @@ h4 {
   top: 0;
   z-index: 100;
 
-  #client-branding {
+  .client-branding {
     width: auto;
     height: 50px;
   }
@@ -89,7 +89,7 @@ h4 {
   .nav-link {
     text-transform: uppercase;
     font-size: 0.8rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
     margin: 0px 5px;
   }
 
@@ -233,9 +233,29 @@ footer {
   padding-top: 5vh;
   background-color: #070d19;
 
-  li,
+  .client-branding {
+    width: auto;
+    height: 45px;
+  }
+
+  a,
   address,
   p {
     color: #f0f0f2;
+    font-size: 0.9rem;
+  }
+
+  #footer-nav {
+    list-style: none;
+
+    a {
+      text-transform: capitalize;
+      text-decoration: none;
+    }
+  }
+
+  #mt-logo{
+    width: auto;
+    height: 75px;
   }
 }

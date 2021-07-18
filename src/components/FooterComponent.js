@@ -1,37 +1,48 @@
-import React from 'react'
-import { Container, Row, Col } from 'reactstrap';
+import React from "react";
+import { Container, Row, Col } from "reactstrap";
+import ClientFullBrand from "../images/grey-area-full-branding-02.png";
+import MtLogo from "../images/MT-logo-WHITE.png"
+import navLinks from "../shared/navLinks";
 
-export default function Footer(){
+export default function Footer() {
+  const links = navLinks.map((link) => {
     return (
-        <>
-            <footer>
-                <Container>
-                    <Row>
-                        <Col sm="2">
-                            <img src="" alt="" />
-                        </Col>
-                        <Col sm="2">
-                            <ul>
-                                <li>About Us</li>
-                                <li>Contact</li>
-                                <li>Terms & Conditions</li>
-                            </ul>
-                        </Col>
-                        <Col sm="4">
-                            <address>
-                                12345 Main Street St. Petersburg, FL 33700 <br />
-                                (727) 555-1234 <br />
-                                hello@greyareaservices.com
-                            </address>
-                        </Col>
+      <li key={link.id}>
+        <a href={link.url} className="footer-link">
+          {link.text}
+        </a>
+      </li>
+    );
+  });
 
-                        <Col sm="4">
-                            <p>Website deisgned and devloped my Marble Theory Design, LLC</p>
-                            <img src="" alt="" />
-                        </Col>
-                    </Row>
-                </Container>
-            </footer>
-        </>
-    )
+  return (
+    <>
+      <footer>
+        <Container>
+          <Row>
+            <Col sm="2" className="d-flex ">
+              <div className="align-self-center">
+                <img src={ClientFullBrand} className="client-branding" alt="Grey Area Services" />
+              </div>
+            </Col>
+            <Col sm="2">
+              <ul id="footer-nav">{links}</ul>
+            </Col>
+            <Col sm="4">
+              <address>
+                12345 Main Street St. Petersburg, FL 33700 <br />
+                (727) 555-1234 <br />
+                hello@greyareaservices.com
+              </address>
+            </Col>
+
+            <Col sm="4" className="text-center">
+              <p>Website designed and developed by:</p>
+              <img src={MtLogo} id="mt-logo" alt="Marble Theory Design" />
+            </Col>
+          </Row>
+        </Container>
+      </footer>
+    </>
+  );
 }
