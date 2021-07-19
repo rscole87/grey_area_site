@@ -16,9 +16,9 @@ export default function CallToAction() {
               <h4 data-aos="fade-left" data-aos-duration="1500">
                 Always Discreet. Always Confidential.
               </h4>
-              <p className="body-copy">At Grey Area Services, <strong>maintaining our clients' privacy</strong> is our number one priorty. All investigative records are stored securely and subsequently shredded to ensure maximum security. </p>
+              <p className="body-copy">At Grey Area Services, <strong>maintaining our clients' privacy</strong> is our number one priority. All investigative records are stored securely and subsequently shredded to ensure maximum security. </p>
               <p className="body-copy">We believe a strong moral compass is essential to successfully fullfilling our investigative duty to you. As such, we thoroughly vet all of our team members to ensure <strong>consistent integrity</strong> in our operations.</p>
-              <p className="body-copy">When pursuing investigative services, you should be able to rest assured the information you receive is fully truthful and 100% accurate. Our <strong>attention to detail</strong> is a defining feature which sets us apart from the competition. You can always trust the results of our investigations to be thorough, truthful, accurate.</p>
+              <p className="body-copy">When pursuing investigative services, you should be able to rest assured the information you receive is fully truthful and 100% accurate. Our <strong>attention to detail</strong> is a defining feature which sets us apart from the competitors. You can always trust the results of our investigations to be thorough, truthful, and accurate.</p>
               <div className="row">
                 <div className="col d-flex justify-content-center justify-content-sm-start">
                   <button className="input-bttn no-left-margin">View More</button>

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 // @import '../fonts/Noto_Sans/NotoSans-Bold.ttf';
 // @import '../fonts/Noto_Sans/NotoSans-BoldItalic.ttf';
 // @import '../fonts/Noto_Sans/NotoSans-Italic.ttf';
@@ -177,6 +178,7 @@ h4 {
 
   .pull-quote {
     font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
     color: $customBlue;
     font-weight: 100;
     line-height: 3rem;

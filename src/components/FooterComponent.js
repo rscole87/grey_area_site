@@ -21,17 +21,17 @@ export default function Footer() {
         <Container>
           <Row>
             <Col sm="4" className="d-flex flex-column flex-lg-row justify-content-center justify-content-sm-start">
-              <div className="align-self-center ">
+              <div className="align-self-center mb-1 mb-sm-0">
                 <img src={ClientFullBrand} className="client-branding" alt="Grey Area Services" />
               </div>
-              <div>
+              <div className="d-none d-sm-block">
                 <ul id="footer-nav" className="p-0 ps-lg-5 mt-3 mt-lg-0 d-flex flex-row flex-lg-column justify-content-around">
                   {links}
                 </ul>
               </div>
             </Col>
 
-            <Col sm="4" className="text-center text-sm-start ps-sm-5">
+            <Col sm="4" className="text-center text-sm-start mb-4 mb-sm-0 ps-sm-5 ">
               <address>
                 12345 Main Street St. Petersburg, FL 33700 <br />
                 (727) 555-1234 <br />

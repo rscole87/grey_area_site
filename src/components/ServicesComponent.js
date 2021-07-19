@@ -27,7 +27,7 @@ export default function Services() {
             <Col className="service text-center p-3" sm="4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
               <img src={iconPeople} className="service-icon" alt="" />
               <h4 className="service-heading">Missing Persons</h4>
-              <p className="service-description">Locating a missing person can be challenging process for anyone, so let our team loctate them for you and give you peace of mind.</p>
+              <p className="service-description">Locating a missing person can be a challenging process for anyone, so let our team loctate them for you and give you peace of mind.</p>
             </Col>
           </Row>
         </Container>
