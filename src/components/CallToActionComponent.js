@@ -13,9 +13,9 @@ export default function CallToAction() {
             </Col>
 
             <Col id="call-to-action-text-div" className="ps-sm-5" sm="8">
-              <h4 data-aos="fade-left" data-aos-duration="1500">
+              <h3 data-aos="fade-left" data-aos-duration="1500">
                 Always Discreet. Always Confidential.
-              </h4>
+              </h3>
               <p className="body-copy">At Grey Area Services, <strong>maintaining our clients' privacy</strong> is our number one priority. All investigative records are stored securely and subsequently shredded to ensure maximum security. </p>
               <p className="body-copy">We believe a strong moral compass is essential to successfully fullfilling our investigative duty to you. As such, we thoroughly vet all of our team members to ensure <strong>consistent integrity</strong> in our operations.</p>
               <p className="body-copy">When pursuing investigative services, you should be able to rest assured the information you receive is fully truthful and 100% accurate. Our <strong>attention to detail</strong> is a defining feature which sets us apart from the competitors. You can always trust the results of our investigations to be thorough, truthful, and accurate.</p>

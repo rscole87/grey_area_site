@@ -13,7 +13,8 @@ body {
 
 h1,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Noto Sans", sans-serif;
   font-weight: 700;
 }
@@ -158,6 +159,7 @@ h4 {
 
 #services-section h3,
 #services-section h4,
+#services-section h5,
 #services-section p {
   color: #f0f0f2;
 }
