@@ -13,7 +13,7 @@ export default function About() {
 
               <p className="body-copy">We believe our investigative services provide a level of transparency everyone deserves, which is why we serve both commercial entities and private citizens. Uncovering the truth for you is our ultimate goal.</p>
 
-              <p className="body-copy pull-quote">The truth is what you're seeking, and it's our mission to get you there.</p>
+              <p className="body-copy">The truth is what you're seeking, and it's our mission to get you there.</p>
             </Col>
 
             <Col id="about-form-div" className="ps-sm-5" sm="4">

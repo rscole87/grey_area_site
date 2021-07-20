@@ -46,10 +46,10 @@ h4 {
           transform: scaleX(0);
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  transition: -webkit-transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
 }
 
 .input-bttn:hover::before {
@@ -163,17 +163,13 @@ h4 {
 }
 
 #services-section .service-icon {
-  max-width: 70px;
+  max-width: 90px;
 }
 
 @media only screen and (max-width: 992px) {
   #services-section .service-icon {
-    max-width: 60px;
+    max-width: 75px;
   }
-}
-
-#services-section .service-heading {
-  margin-top: 20px;
 }
 
 #services-section .service-description {
@@ -289,7 +285,7 @@ footer {
 
 footer .client-branding {
   width: auto;
-  height: 45px;
+  height: 50px;
 }
 
 footer a,
@@ -316,6 +312,6 @@ footer #footer-nav a:hover {
 
 footer #mt-logo {
   width: auto;
-  height: 75px;
+  height: 60px;
 }
 /*# sourceMappingURL=App.css.map */

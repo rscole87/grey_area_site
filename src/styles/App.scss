@@ -48,7 +48,7 @@ h4 {
     background-color: $customBlue;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 300ms ease-in-out;
+    transition: transform 200ms ease-in-out;
   }
 
   &:hover::before {
@@ -155,15 +155,15 @@ h4 {
   }
 
   .service-icon {
-    max-width: 70px;
+    max-width: 90px;
 
     @media only screen and (max-width: 992px) {
-      max-width: 60px;
+      max-width: 75px;
     }
   }
 
   .service-heading {
-    margin-top: 20px;
+    // margin-top: 20px;
   }
 
   .service-description {
@@ -252,7 +252,7 @@ footer {
 
   .client-branding {
     width: auto;
-    height: 45px;
+    height: 50px;
   }
 
   a,
@@ -278,6 +278,6 @@ footer {
 
   #mt-logo {
     width: auto;
-    height: 75px;
+    height: 60px;
   }
 }
