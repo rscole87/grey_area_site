@@ -147,14 +147,8 @@ h5 {
 #services-section {
   min-height: 50vh;
   padding: 10vh 0;
+  scroll-margin-top: 8.8vh;
   background-color: #070d19;
-}
-
-@media only screen and (max-width: 575px) {
-  #services-section {
-    padding: 15vh 0 10vh 0;
-    margin-top: -5vh;
-  }
 }
 
 #services-section h3,
@@ -182,6 +176,7 @@ h5 {
   min-height: 50vh;
   padding: 10vh 0;
   background-color: #f0f0f2;
+  scroll-margin-top: 8.8vh;
 }
 
 #about-section .pull-quote {
@@ -190,13 +185,6 @@ h5 {
   color: #128BF1;
   font-weight: 100;
   line-height: 3rem;
-}
-
-@media only screen and (max-width: 575px) {
-  #about-section {
-    padding: 15vh 0 10vh 0;
-    margin-top: -5vh;
-  }
 }
 
 #about-section #about-form-div {
@@ -263,6 +251,7 @@ h5 {
 #call-to-action-section {
   min-height: 50vh;
   padding: 10vh 0;
+  scroll-margin-top: 8.8vh;
 }
 
 #call-to-action-section #logo-bg-div img {
@@ -270,10 +259,6 @@ h5 {
 }
 
 @media only screen and (max-width: 575px) {
-  #call-to-action-section {
-    padding: 15vh 0 10vh 0;
-    margin-top: -5vh;
-  }
   #call-to-action-section #logo-bg-div img {
     max-width: 150px;
   }
