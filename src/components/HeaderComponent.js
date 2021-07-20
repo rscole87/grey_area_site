@@ -10,10 +10,16 @@ export default function Header() {
     setIsNavOpen(!isNavOpen);
   };
 
+  const closeNav = () => {
+    if (isNavOpen == true) {
+      toggleNav()
+    }
+  }
+
   const links = navLinks.map((link) => {
     return (
-      <NavItem key={link.id}>
-        <a className="nav-link" href={link.url} onClick={() => toggleNav()}>
+      <NavItem key={link.id} onClick={() => closeNav()}>
+        <a className="nav-link" href={link.url} >
           {link.text}
         </a>
       </NavItem>
