@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Container, Row, Col } from "reactstrap";
 import ClientFullBrand from "../images/grey-area-full-branding-02.png";
 import navLinks from "../shared/navLinks";
+import ContactModal from "./ContactComponent";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -12,14 +14,19 @@ export default function Header() {
 
   const closeNav = () => {
     if (isNavOpen == true) {
-      toggleNav()
+      toggleNav();
     }
-  }
+  };
+
+  const toggleModal = () => {
+    console.log(isModalOpen);
+    setIsModalOpen(!isModalOpen);
+  };
 
   const links = navLinks.map((link) => {
     return (
       <NavItem key={link.id} onClick={() => closeNav()}>
-        <a className="nav-link" href={link.url} >
+        <a className="nav-link" href={link.url}>
           {link.text}
         </a>
       </NavItem>
@@ -38,12 +45,16 @@ export default function Header() {
             <Nav className="text-center" navbar>
               {links}
               <NavItem>
-                <a id="contact-link" className="nav-link" href="" onClick={() => toggleNav()}>Contact</a>
+                <span id="contact-link" className="nav-link" onClick={() => toggleModal()}>
+                  Contact
+                </span>
               </NavItem>
             </Nav>
           </Collapse>
         </div>
       </Navbar>
+      
+      <ContactModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
 
       <section id="header-section">
         <Container>
@@ -52,7 +63,9 @@ export default function Header() {
               <div id="header-content" className="text-center align-self-center">
                 <div className="row">
                   <h1 id="main-heading">It's all about the Grey.</h1>
-                  <p>We operate in the Grey Area to help you find the infomation you need. <br /> Efficient. Discreet. Confidential.</p>
+                  <p>
+                    We operate in the Grey Area to help you find the infomation you need. <br /> Efficient. Discreet. Confidential.
+                  </p>
                 </div>
                 <div className="row">
                   <div>
