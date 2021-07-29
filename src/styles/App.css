@@ -156,8 +156,21 @@ h5 {
 #services-section h3,
 #services-section h4,
 #services-section h5,
-#services-section p {
+#services-section p,
+#services-section li {
   color: #f0f0f2;
+}
+
+#services-section h6 {
+  font-weight: bolder;
+  color: #128BF1;
+}
+
+#services-section ul,
+#services-section ol {
+  font-size: 0.9rem;
+  padding: 0 0 0 15px;
+  line-height: 1.5rem;
 }
 
 #services-section .service-icon {
@@ -172,6 +185,38 @@ h5 {
 
 #services-section .service-description {
   font-size: 1rem;
+}
+
+#services-section .input-bttn {
+  color: white;
+  border: 2px solid #128BF1;
+}
+
+#services-section .input-bttn:hover {
+  border: 2px solid #128BF1;
+}
+
+#services-section #services-list-div {
+  margin: 5vh 0 0 0;
+  border-top: 2px solid #128BF1;
+  -webkit-column-count: 3;
+          column-count: 3;
+}
+
+@media only screen and (max-width: 769px) {
+  #services-section #services-list-div {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #services-section #services-list-div {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
 }
 
 #about-section {
