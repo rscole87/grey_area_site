@@ -7,6 +7,7 @@ html {
 
 body {
   font-family: "Noto Sans", sans-serif;
+  padding: 0;
   overflow-x: hidden;
   position: relative;
 }
@@ -182,7 +183,7 @@ h5 {
 
 #about-section .pull-quote {
   font-size: 3rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #128BF1;
   font-weight: 100;
   line-height: 3rem;

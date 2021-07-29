@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 // @import '../fonts/Noto_Sans/NotoSans-Bold.ttf';
 // @import '../fonts/Noto_Sans/NotoSans-BoldItalic.ttf';
 // @import '../fonts/Noto_Sans/NotoSans-Italic.ttf';
@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: "Noto Sans", sans-serif;
+  padding: 0;
   overflow-x: hidden;
   position: relative;
 }
@@ -178,13 +179,11 @@ h5 {
 
   .pull-quote {
     font-size: 3rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: $customBlue;
     font-weight: 100;
     line-height: 3rem;
   }
-
-  
 
   #about-form-div {
     border-left: 3px solid white;

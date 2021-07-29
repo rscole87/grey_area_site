@@ -13,13 +13,12 @@ export default function Header() {
   };
 
   const closeNav = () => {
-    if (isNavOpen == true) {
+    if (isNavOpen === true) {
       toggleNav();
     }
   };
 
   const toggleModal = () => {
-    console.log(isModalOpen);
     setIsModalOpen(!isModalOpen);
   };
 
@@ -54,21 +53,21 @@ export default function Header() {
         </div>
       </Navbar>
       
-      <ContactModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+      <ContactModal isModalOpen={isModalOpen} toggleModal={toggleModal} />
 
       <section id="header-section">
         <Container>
           <Row id="header">
             <Col id="header-content-container" className="mx-auto my-auto d-flex">
-              <div id="header-content" className="text-center align-self-center">
+              <div id="header-content" className="align-self-center">
                 <div className="row">
-                  <h1 id="main-heading">It's all about the Grey.</h1>
-                  <p>
+                  <h1 id="main-heading" className="mx-auto text-center">It's all about the Grey.</h1>
+                  <p className="mx-auto text-center">
                     We operate in the Grey Area to help you find the infomation you need. <br /> Efficient. Discreet. Confidential.
                   </p>
                 </div>
                 <div className="row">
-                  <div>
+                  <div className="mx-auto">
                     <button className="input-bttn ">View More</button>
                     <button className="input-bttn ">Get Started</button>
                   </div>

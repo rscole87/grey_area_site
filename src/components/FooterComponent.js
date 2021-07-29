@@ -25,7 +25,7 @@ export default function Footer() {
                 <img src={ClientFullBrand} className="client-branding" alt="Grey Area Services" />
               </div>
               <div className="d-none d-sm-block">
-                <ul id="footer-nav" className="p-0 ps-lg-5 mt-3 mt-lg-0 d-flex flex-row flex-lg-column justify-content-around">
+                <ul id="footer-nav" className="p-0 pl-lg-5 mt-3 mt-lg-0 d-flex flex-row flex-lg-column justify-content-around">
                   {links}
                 </ul>
               </div>
