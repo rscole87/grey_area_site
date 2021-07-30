@@ -7,6 +7,7 @@ import ContactModal from "./ContactComponent";
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -19,7 +20,16 @@ export default function Header() {
   };
 
   const toggleModal = () => {
+    closeNav();
     setIsModalOpen(!isModalOpen);
+  };
+
+  const toggleContactForm = () => {
+    setIsContactFormOpen(!isContactFormOpen);
+  };
+
+  const closeContactForm = () => {
+    setIsContactFormOpen(false);
   };
 
   const links = navLinks.map((link) => {
@@ -61,15 +71,21 @@ export default function Header() {
             <Col id="header-content-container" className="mx-auto my-auto d-flex">
               <div id="header-content" className="align-self-center">
                 <div className="row">
-                  <h1 id="main-heading" className="mx-auto text-center">It's all about the Grey.</h1>
+                  <h1 id="main-heading" className="mx-auto text-center">
+                    It's all about the Grey.
+                  </h1>
                   <p className="mx-auto text-center">
                     We operate in the Grey Area to help you find the infomation you need. <br /> Efficient. Discreet. Confidential.
                   </p>
                 </div>
                 <div className="row">
                   <div className="mx-auto">
-                    <button className="input-bttn ">View More</button>
-                    <button className="input-bttn ">Get Started</button>
+                    <a className="input-bttn" href="#services-section">
+                      View More
+                    </a>
+                    <a className="input-bttn" onClick={() => toggleModal()}>
+                      Get Started
+                    </a>
                   </div>
                 </div>
               </div>

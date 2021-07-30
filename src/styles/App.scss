@@ -18,6 +18,15 @@ body {
   position: relative;
 }
 
+a.input-bttn {
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 h1,
 h3,
 h4,
@@ -73,6 +82,14 @@ h5 {
 
   .no-left-margin {
     margin-left: 12px;
+  }
+}
+
+button.customBlue-bttn {
+  background-color: $customBlue;
+
+  &:hover {
+    background-color: rgb(64, 194, 140);
   }
 }
 
@@ -144,7 +161,7 @@ h5 {
 #services-section {
   min-height: 50vh;
   padding: 10vh 0;
-  scroll-margin-top: 8.8vh;
+  scroll-margin-top: 7.5vh;
 
   background-color: #070d19;
   h3,
@@ -212,7 +229,7 @@ h5 {
   min-height: 50vh;
   padding: 10vh 0;
   background-color: #f0f0f2;
-  scroll-margin-top: 8.8vh;
+  scroll-margin-top: 7.5vh;
 
   .pull-quote {
     font-size: 3rem;
@@ -256,10 +273,10 @@ h5 {
   }
 }
 
-#call-to-action-section {
+#values-section {
   min-height: 50vh;
   padding: 10vh 0;
-  scroll-margin-top: 8.8vh;
+  scroll-margin-top: 7.5vh;
 
   #logo-bg-div {
     img {

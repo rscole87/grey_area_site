@@ -1,16 +1,17 @@
 import React from "react";
-import { Modal, ModalHeader, ModalFooter, ModalBody, Form, FormGroup, Input, Label, Button, Row, Col } from "reactstrap";
+import { Modal, ModalHeader, ModalFooter, ModalBody, Form, FormGroup, Input, Label, Button, Row, Col, Collapse } from "reactstrap";
 
 const ContactModal = (props) => {
   return (
-    <Modal isOpen={props.isModalOpen} toggle={props.toggleModal} size="lg" style={{ paddingRight: 0 }}>
+    <Modal isOpen={props.isModalOpen} toggle={props.toggleModal} size="xl">
       <ModalHeader toggle={props.toggleModal}>Contact Us</ModalHeader>
       <ModalBody>
         <p>Please complete the below form and we will contact you shortly to discuss how we can best assist you.</p>
-        <Form>
+        <form id="client-inquiry-form" name="client-inquiry-form" method="POST" data-netlify="true">
           <Row>
             <Col sm={6}>
               <FormGroup>
+                <input type="hidden" name="form-name" value="client-inquiry-form" />
                 <Label htmlFor="first-name" hidden>
                   First Name
                 </Label>
@@ -49,15 +50,15 @@ const ContactModal = (props) => {
           </Row>
 
           <ModalFooter>
-            <Button type="submit" value="submit" color="primary">
+            <Button type="submit" value="submit" className="customBlue-bttn">
               Submit
             </Button>
 
-            <Button type="cancel" value="cancel" color="secondary" onClick={props.toggleModal}>
+            <Button color="secondary" onClick={props.toggleModal}>
               Cancel
             </Button>
           </ModalFooter>
-        </Form>
+        </form>
       </ModalBody>
     </Modal>
   );

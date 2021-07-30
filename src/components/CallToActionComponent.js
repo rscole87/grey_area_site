@@ -5,14 +5,14 @@ import Logo from "../images/grey-area-logo-icon.png";
 export default function CallToAction() {
   return (
     <>
-      <section id="call-to-action-section">
+      <section id="values-section">
         <Container>
           <Row id="values-content" className="align-items-center">
             <Col id="logo-bg-div" sm="4" className="text-center pb-4 pb-sm-0">
               <img src={Logo} alt="" />
             </Col>
 
-            <Col id="call-to-action-text-div" className="ps-sm-5" sm="8">
+            <Col id="values-text-div" className="ps-sm-5" sm="8">
               <h3 data-aos="fade-left" data-aos-duration="1500">
                 Always Discreet. Always Confidential.
               </h3>

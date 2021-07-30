@@ -17,7 +17,7 @@ const navLinks = [
   {
     id: 3,
     text: "values",
-    url: "#call-to-action-section",
+    url: "#values-section",
   },
 ];
 
