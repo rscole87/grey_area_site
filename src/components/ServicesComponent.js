@@ -3,6 +3,8 @@ import { Container, Row, Col, Collapse } from "reactstrap";
 import iconDocuments from "../images/icon-documents.png";
 import iconBinoculars from "../images/icon-binoculars.png";
 import iconSheild from "../images/icon-sheild.png";
+import iconClipboard from "../images/icon-clipboard.png";
+
 
 export default function Services() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,16 +30,16 @@ export default function Services() {
             </Col>
 
             <Col className="service text-center p-3" sm="4" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
-              <img src={iconSheild} className="service-icon" alt="" />
-              <h4 className="service-heading">Security Services</h4>
-              <p className="service-description">If you have concerns about your physical safety or the safety of high value items, our military-trained team is available to help put your mind at ease.</p>
+              <img src={iconClipboard} className="service-icon" alt="" />
+              <h4 className="service-heading">Process Serving</h4>
+              <p className="service-description">For prompt and accurate delivery of secure documents, contact us to arrange a time for one of our licensed process servers to assist you. </p>
             </Col>
           </Row>
         </Container>
 
         <Container>
           <Collapse id="services-list-div" className="p-5" isOpen={isOpen}>
-            <h6>Investigation and Business Intelligence Services</h6>
+            <h6>Investigation and Business Intelligence</h6>
             <ol>
               <li>Process Serving</li>
               <li>Background Checks</li>
@@ -54,7 +56,7 @@ export default function Services() {
               <li>
                 Support to Corporate Security and Legal Departments
                 <ul>
-                  <li>Compliance assessments</li>
+                  <li>Compliance Assessments</li>
                   <li>Threat Assessments</li>
                   <li>Vulnerability Assessments</li>
                   <li>
@@ -82,7 +84,7 @@ export default function Services() {
               </li>
             </ol>
 
-            <h6>Security Services</h6>
+            {/* <h6>Security</h6>
             <ol>
               <li>Specializing in low visibility or discreet activity</li>
               <li>VIP, executive protection, and personal security - Armed or unarmed</li>
@@ -107,13 +109,13 @@ export default function Services() {
               <li>Video and audio analysis</li>
               <li>International travel ready</li>
               <li>Foreign language proficiency</li>
-            </ol>
+            </ol> */}
           </Collapse>
           <Row>
             <Col className="d-flex justify-content-center">
               <div className="mx-auto">
                 <button className="input-bttn" onClick={() => toggleServicesList()}>
-                  {isOpen ? "Hide" : "Show"} all services
+                  {isOpen ? "Hide" : "Show"} Services
                 </button>
               </div>
             </Col>

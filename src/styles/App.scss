@@ -126,6 +126,24 @@ button.customBlue-bttn {
   }
 }
 
+#contact-form-modal{
+  background-color: $customBlue;
+
+  div.modal-header{
+    color: white;
+    background-color: $customBlue;
+  }
+
+  div.modal-body{
+    background-color: #f0f0f2;
+  }
+  
+  .client-branding{
+    width: auto;
+    height: 60px;
+  }
+}
+
 #header-section {
   min-height: 85vh;
   background-image: url(../images/BG-header.jpg);

@@ -33,9 +33,9 @@ export default function Footer() {
 
             <Col sm="4" className="text-center text-sm-start mb-4 mb-sm-0 ps-sm-5 ">
               <address>
-                12345 Main Street St. Petersburg, FL 33700 <br />
-                (727) 555-1234 <br />
-                hello@greyareaservices.com
+                P.O. Box 7715 St. Petersburg, FL 33734 <br />
+                <a href="tel:+17273354774">(727) 335-4774 </a> <br />
+                <a href="mailto:information@greyareaservices.com">information@greyareaservices.com</a> 
               </address>
             </Col>
 

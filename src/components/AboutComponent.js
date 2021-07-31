@@ -9,7 +9,7 @@ export default function About() {
           <Row>
             <Col id="about-text-div" className="pe-sm-5" sm="8">
               <h3 data-aos="fade-right" data-aos-duration="1500">Revealing the Truth</h3>
-              <p className="body-copy">Grey Area Services is a veteran-owned and operated full service private investigative firm serving the Tampa Bay Area and surrounding communities. Our team is comprised of diverse, talented individuals who leverage years of military experience and training to provide a wide variety of services for our clients. </p>
+              <p className="body-copy">Grey Area Services is a veteran-owned and operated full service private investigative firm serving the Tampa Bay Area and surrounding communities. Our team is comprised of diverse, talented individuals who leverage years of law enforcement and military experience to provide a wide variety of services for our clients. </p>
 
               <p className="body-copy">We believe our investigative services provide a level of transparency everyone deserves, which is why we serve both commercial entities and private citizens. Uncovering the truth for you is our ultimate goal.</p>
 
@@ -21,7 +21,7 @@ export default function About() {
               <form action="submit">
                 <input type="text" placeholder="Name" />
                 <input type="email" placeholder="Email" />
-                <textarea name="" id="" cols="30" rows="3" placeholder="Your questions:"></textarea>
+                <textarea name="" id="" cols="30" rows="3" placeholder="Your Questions:"></textarea>
                 <button type="submit" className="input-bttn mx-auto">
                   Free Consult
                 </button>
