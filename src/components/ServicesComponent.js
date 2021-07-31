@@ -5,7 +5,6 @@ import iconBinoculars from "../images/icon-binoculars.png";
 import iconSheild from "../images/icon-sheild.png";
 import iconClipboard from "../images/icon-clipboard.png";
 
-
 export default function Services() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleServicesList = () => setIsOpen(!isOpen);
@@ -39,35 +38,48 @@ export default function Services() {
 
         <Container>
           <Collapse id="services-list-div" className="p-5" isOpen={isOpen}>
-            <h6>Investigation and Business Intelligence</h6>
-            <ol>
-              <li>Process Serving</li>
-              <li>Background Checks</li>
-              <li>
-                Litigation
+            <Row>
+              <Col sm="4">
+                <h6>Investigation and Business Intelligence</h6>
                 <ul>
-                  <li>Child Custody</li>
-                  <li>Infidelity/Divorce</li>
-                  <li>Claims Against Law Enforcement</li>
-                </ul>
-              </li>
-              <li>Insurance – Full Suite of Services</li>
-
-              <li>
-                Support to Corporate Security and Legal Departments
-                <ul>
-                  <li>Compliance Assessments</li>
-                  <li>Threat Assessments</li>
-                  <li>Vulnerability Assessments</li>
+                  <li>Process Serving</li>
+                  <li>Background Checks</li>
                   <li>
-                    Security Assessment (Physical)
+                    Litigation
                     <ul>
-                      <li>Scalable and flexible</li>
-                      <li>Personnel, systems, and procedures</li>
-                      <li>Announced or unannounced</li>
-                      <li>Overt or discreet presence and activity</li>
+                      <li>Child Custody</li>
+                      <li>Infidelity/Divorce</li>
+                      <li>Claims Against Law Enforcement</li>
                     </ul>
                   </li>
+                  <li>Insurance – Full Suite of Services</li>
+                </ul>
+              </Col>
+
+              <Col sm="4">
+                <ul>
+                  <li>
+                    Support to Corporate Security and Legal Departments
+                    <ul>
+                      <li>Compliance Assessments</li>
+                      <li>Threat Assessments</li>
+                      <li>Vulnerability Assessments</li>
+                      <li>
+                        Security Assessment (Physical)
+                        <ul>
+                          <li>Scalable and flexible</li>
+                          <li>Personnel, systems, and procedures</li>
+                          <li>Announced or unannounced</li>
+                          <li>Overt or discreet presence and activity</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </Col>
+
+              <Col sm="4">
+                <ul>
                   <li>
                     Internal Investigations
                     <ul>
@@ -81,8 +93,8 @@ export default function Services() {
                   </li>
                   <li>Due diligence to support mergers, acquisitions, and sub-contracting</li>
                 </ul>
-              </li>
-            </ol>
+              </Col>
+            </Row>
 
             {/* <h6>Security</h6>
             <ol>

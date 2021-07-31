@@ -200,6 +200,14 @@ button.customBlue-bttn {
     font-size: 0.9rem;
     padding: 0 0 0 15px;
     line-height: 1.5rem;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 0.75rem;
+    }
+
+    @media only screen and (max-width: 575px) {
+      font-size: 0.9rem;
+    }
   }
 
   .service-icon {
@@ -230,16 +238,6 @@ button.customBlue-bttn {
   #services-list-div {
     margin: 5vh 0 0 0;
     border-top: 2px solid $customBlue;
-    column-count: 3;
-
-    @media only screen and (max-width: 769px) {
-      column-count: 2;
-      column-gap: 40px;
-    }
-
-    @media only screen and (max-width: 575px) {
-      column-count: 1;
-    }
   }
 }
 
@@ -250,11 +248,11 @@ button.customBlue-bttn {
   scroll-margin-top: 7.5vh;
 
   .pull-quote {
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Roboto", sans-serif;
     color: black;
-    font-weight: 100;
-    line-height: 3rem;
+    font-weight: bold;
+    line-height: 2.5rem;
   }
 
   #about-form-div {
