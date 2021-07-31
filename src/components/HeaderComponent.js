@@ -4,10 +4,8 @@ import ClientFullBrand from "../images/grey-area-full-branding-02.png";
 import navLinks from "../shared/navLinks";
 import ContactModal from "./ContactComponent";
 
-export default function Header() {
+export default function Header(props) {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -17,19 +15,6 @@ export default function Header() {
     if (isNavOpen === true) {
       toggleNav();
     }
-  };
-
-  const toggleModal = () => {
-    closeNav();
-    setIsModalOpen(!isModalOpen);
-  };
-
-  const toggleContactForm = () => {
-    setIsContactFormOpen(!isContactFormOpen);
-  };
-
-  const closeContactForm = () => {
-    setIsContactFormOpen(false);
   };
 
   const links = navLinks.map((link) => {
@@ -54,7 +39,14 @@ export default function Header() {
             <Nav className="text-center" navbar>
               {links}
               <NavItem>
-                <span id="contact-link" className="nav-link" onClick={() => toggleModal()}>
+                <span
+                  id="contact-link"
+                  className="nav-link"
+                  onClick={() => {
+                    closeNav();
+                    props.toggleModal();
+                  }}
+                >
                   Contact
                 </span>
               </NavItem>
@@ -62,8 +54,8 @@ export default function Header() {
           </Collapse>
         </div>
       </Navbar>
-      
-      <ContactModal isModalOpen={isModalOpen} toggleModal={toggleModal} />
+
+      <ContactModal isModalOpen={props.isModalOpen} toggleModal={props.toggleModal} />
 
       <section id="header-section">
         <Container>
@@ -83,7 +75,13 @@ export default function Header() {
                     <a className="input-bttn" href="#services-section">
                       View More
                     </a>
-                    <a className="input-bttn" onClick={() => toggleModal()}>
+                    <a
+                      className="input-bttn"
+                      onClick={() => {
+                        closeNav();
+                        props.toggleModal();
+                      }}
+                    >
                       Get Started
                     </a>
                   </div>

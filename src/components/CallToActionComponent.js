@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import { PopperPlacements } from "reactstrap/lib/utils";
 import Logo from "../images/grey-area-logo-icon.png";
 
-export default function CallToAction() {
+export default function CallToAction(props) {
   return (
     <>
       <section id="values-section">
@@ -21,8 +22,7 @@ export default function CallToAction() {
               <p className="body-copy">When pursuing investigative services, you should be able to rest assured the information you receive is fully truthful and 100% accurate. Our <strong>attention to detail</strong> is a defining feature which sets us apart from the competitors. You can always trust the results of our investigations to be thorough, truthful, and accurate.</p>
               <div className="row">
                 <div className="col d-flex justify-content-center justify-content-sm-start">
-                  <button className="input-bttn no-left-margin">View More</button>
-                  <button className="input-bttn">Get Started</button>
+                  <button className="input-bttn no-left-margin" onClick={props.toggleModal}>Get Started</button>
                 </div>
               </div>
             </Col>
