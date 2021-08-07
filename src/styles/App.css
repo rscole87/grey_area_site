@@ -144,7 +144,7 @@ button.customBlue-bttn:hover {
 
 #contact-form-modal .client-branding {
   width: auto;
-  height: 60px;
+  height: 150px;
 }
 
 #header-section {
@@ -350,7 +350,19 @@ footer {
 
 footer .client-branding {
   width: auto;
-  height: 50px;
+  height: 70px;
+}
+
+@media only screen and (max-width: 1024px) {
+  footer .client-branding {
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  footer .client-branding {
+    height: 135px;
+  }
 }
 
 footer a,

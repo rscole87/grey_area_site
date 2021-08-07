@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Container, Row, Col } from "reactstrap";
-import ClientFullBrand from "../images/grey-area-full-branding-02.png";
+import ClientFullBrand from "../images/ga-horizontal-white.png";
 import navLinks from "../shared/navLinks";
 import ContactModal from "./ContactComponent";
 

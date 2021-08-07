@@ -126,21 +126,21 @@ button.customBlue-bttn {
   }
 }
 
-#contact-form-modal{
+#contact-form-modal {
   background-color: $customBlue;
 
-  div.modal-header{
+  div.modal-header {
     color: white;
     background-color: $customBlue;
   }
 
-  div.modal-body{
+  div.modal-body {
     background-color: #f0f0f2;
   }
-  
-  .client-branding{
+
+  .client-branding {
     width: auto;
-    height: 60px;
+    height: 150px;
   }
 }
 
@@ -316,7 +316,19 @@ footer {
 
   .client-branding {
     width: auto;
-    height: 50px;
+    height: 70px;
+  }
+
+  @media only screen and (max-width: 1024px){
+    .client-branding {
+      height: 60px;
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    .client-branding {
+      height: 135px;
+    }
   }
 
   a,
